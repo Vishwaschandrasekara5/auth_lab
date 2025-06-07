@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Protected Page</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+
+    <p>This is a protected page for logged-in users only.</p>
+
+    <p><a href="{{ url_for('home') }}">Back to Home</a></p>
+</body>
+</html>
