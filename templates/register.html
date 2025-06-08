@@ -7,7 +7,7 @@
 <body>
     <h1>Register</h1>
 
-    <!-- Flash messages block -->
+    <!-- Flash messages block with red color -->
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul style="color: red;">
@@ -18,13 +18,13 @@
         {% endif %}
     {% endwith %}
 
-    <!-- Registration form -->
+    <!-- Registration form without HTML5 validation -->
     <form method="POST" action="{{ url_for('register') }}">
         <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
+        <input type="text" id="username" name="username"><br><br>
 
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password"><br><br>
 
         <button type="submit">Register</button>
     </form>
